@@ -478,8 +478,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="header">
 <h1>Functional Mock-up Interface Specification</h1>
 <div class="details">
-<span id="revnumber">version df608ac,</span>
-<span id="revdate">2026-07-08</span>
+<span id="revnumber">version d589b00,</span>
+<span id="revdate">2026-07-14</span>
 </div>
 <div id="toc" class="toc2">
 <div id="toctitle">Contents</div>
@@ -2973,7 +2973,23 @@ With this information, the environment must allocate an <code>fmi3Byte</code> ve
 </dl>
 </div>
 <div class="paragraph">
-<p>These serialization and deserialization functions may be called, only if the capability flags <a href="#canGetAndSetFMUState"><code>canGetAndSetFMUState</code></a> and <a href="#canSerializeFMUState"><code>canSerializeFMUState</code></a> are set to <code>true</code>.</p>
+<p>These serialization and deserialization functions may be called, only if the capability flags <a href="#canGetAndSetFMUState"><code>canGetAndSetFMUState</code></a> and <a href="#canSerializeFMUState"><code>canSerializeFMUState</code></a> are set to <code>true</code>.
+Any serialized state must be deserializable into a valid state for the same FMU and the same execution platform.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Whether the state can also be deserialized on another platform of the same FMU, or even across different versions of the same FMU is implementation dependent, so that in general an importer or a user cannot expect this to work, or to even be detected as an error.
+FMUs can of course document their serialization format, and make broader guarantees, but that is beyond the scope of this standard.</p>
+</div>
+</td>
+</tr>
+</table>
 </div>
 </div>
 </div>
