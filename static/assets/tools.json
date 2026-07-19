@@ -5924,10 +5924,11 @@
         "name": "Reference FMUs",
         "license": "osi",
         "url": "https://github.com/modelica/reference-fmus",
+        "logo": "Modelica-Association.svg",
         "vendor": "Modelica Association",
         "vendorURL": "https://modelica.org/association/",
         "examplesURL": "https://github.com/modelica/reference-fmus",
-        "description": "A set of hand-coded FMUs and a simulator for validation, development, testing, and debugging of the Functional Mock-up Interface.",
+        "description": "A set of hand-coded FMUs for validation, development, testing, and debugging of the Functional Mock-up Interface.",
         "features": [],
         "platforms": [
             "macOS",
@@ -5935,23 +5936,14 @@
             "Windows",
             "Source Code"
         ],
-        "interfaces": [
-            "GUI",
-            "CLI",
-            "library"
-        ],
+        "interfaces": [],
         "fmiVersions": [
-            "1.0",
             "2.0",
             "3.0"
         ],
         "fmuExport": [
             "CS",
-            "ME"],
-        "fmuImport": [
-            "CS",
-            "ME"
-        ]
+            "ME"]
     },
     {
         "name": "fmi4c",
@@ -6987,5 +6979,32 @@
             "ME"
         ],
         "layeredStandards": []
+    },
+    {
+        "name": "fmusim",
+        "license": "osi",
+        "url": "https://modelica.github.io/fmusim",
+        "logo": "Modelica-Association.svg",
+        "vendor": "Modelica Association",
+        "vendorURL": "https://modelica.org/association/",
+        "examplesURL": "https://modelica.github.io/fmusim/compatibility",
+        "description": "A command line tool to inspect, validate, and simulate FMUs that creates plots, logs FMI calls, and builds platform binaries.",
+        "features": [],
+        "platforms": [
+            "macOS",
+            "Linux",
+            "Windows",
+            "Source Code"
+        ],
+        "interfaces": [
+            "CLI"
+        ],
+        "fmiVersions": [
+            "2.0",
+            "3.0"
+        ],
+        "fmuImport": [
+            "CS",
+            "ME"]
     }
 ]
