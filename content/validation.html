@@ -77,8 +77,27 @@
         <div class="alert alert-info" role="alert">
           <i class="fa-solid fa-circle-info me-2"></i>
           <strong>We recommend using multiple validation tools</strong> since each tool checks different aspects of FMU compliance.
-          For example, FMU Check performs static checks only, FMPy can also simulate FMUs, fmusim validates the modelDescription.xml against the XML schema, and VDMCheck validates against a formal model of the FMI specification.
+          For example, FMU Check performs static checks only, fmusim and FMPy can also simulate FMUs and validate the modelDescription.xml against the XML schema, and VDMCheck validates against a formal model of the FMI specification.
         </div>
+      </div>
+    </div>
+
+    <div class="row justify-content-center mb-5">
+      <div class="col-xl-9">
+        <h2>fmusim</h2>
+        <p>A command line tool to work with Functions Mock-up Units, written in Rust and hosted by the Modelica Association. It performs static checks, and can simulate single FMUs.</p>  
+        <h5>How to use</h5>
+        <ol>
+          <li>Download the pre-built executables from the <a href="https://github.com/modelica/fmusim/releases">latest release</a></li>
+          <li>Validate an FMU: <code>fmusim validate my_model.fmu</code></li>
+          <li>Simulate an FMU: <code>fmusim simujlate my_model.fmu</code></li>
+          <li>Show all options: <code>fmusim help</code></li>
+        </ol>
+        <p class="d-flex justify-content-start lead fw-normal">
+          <a href="https://github.com/modelica/fmusim" class="icon-link icon-link-hover fw-semibold">
+            fmusim on GitHub <i class="fa-solid fa-arrow-right ms-1"></i>
+          </a>
+        </p>
       </div>
     </div>
 
@@ -129,30 +148,6 @@
 
     <div class="row justify-content-center mb-5">
       <div class="col-xl-9">
-        <h2>Reference FMUs and fmusim</h2>
-        <p>The Reference FMUs are a set of test models and the <code>fmusim</code> application to simulate FMUs. It supports</p>
-        <ul>
-          <li>validation of the modelDescription.xml against the XML schema</li>
-          <li>FMI versions 1.0, 2.0, and 3.0</li>
-          <li>Co-Simulation and Model Exchange</li>
-          <li>Windows, Linux, and Mac</li>
-        </ul>
-        <h5>How to use</h5>
-        <ol>
-          <li>Download the pre-built executables from the <a href="https://github.com/modelica/Reference-FMUs/releases">latest release</a></li>
-          <li>Simulate an FMU: <code>fmusim my_model.fmu</code></li>
-          <li>Show all options: <code>fmusim --help</code></li>
-        </ol>
-        <p class="d-flex justify-content-start lead fw-normal">
-          <a href="https://github.com/modelica/Reference-FMUs" class="icon-link icon-link-hover fw-semibold">
-            Reference FMUs on GitHub <i class="fa-solid fa-arrow-right ms-1"></i>
-          </a>
-        </p>
-      </div>
-    </div>
-
-    <div class="row justify-content-center mb-5">
-      <div class="col-xl-9">
         <h2>FMI-VDM-Model</h2>
         <p>
             A Java library that validates FMUs against a formal model of the FMI specification. It supports FMI versions 2.0 and 3.0, and all interface types.
@@ -171,6 +166,30 @@
         <p class="d-flex justify-content-start lead fw-normal">
           <a href="https://github.com/INTO-CPS-Association/FMI-VDM-Model" class="icon-link icon-link-hover fw-semibold">
             FMI-VDM-Model on GitHub <i class="fa-solid fa-arrow-right ms-1"></i>
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="col-lg-7 mx-auto pb-3 mb-3 mb-md-5 text-md-center">
+
+        <i style="font-size: 6rem;" class="fa-solid fa-file-circle-check mb-4 gradient"></i>
+
+        <h2 class="display-5 mb-3 fw-semibold lh-sm">Test you FMU importer</h2>
+        
+        <p class="lead fw-normal">
+            Whether you want to test an importing tool, you can use the Reference FMUs as a starting point.
+        </p>
+
+    </div>
+  
+    <div class="row justify-content-center mb-5">
+      <div class="col-xl-9">
+        <h2>Reference FMUs</h2>
+        <p>The Reference FMUs are a set of test models that can be used to test importing tools.
+        <p class="d-flex justify-content-start lead fw-normal">
+          <a href="https://github.com/modelica/Reference-FMUs" class="icon-link icon-link-hover fw-semibold">
+            Reference FMUs on GitHub <i class="fa-solid fa-arrow-right ms-1"></i>
           </a>
         </p>
       </div>
