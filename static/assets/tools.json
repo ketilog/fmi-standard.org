@@ -1,4 +1,34 @@
 [
+    {
+        "name": "Jaxonomy",
+        "license": "osi",
+        "url": "https://py.jaxonomy.com/",
+        "logo": "machina-vitalis.svg",
+        "vendor": "Machina Vitalis",
+        "vendorURL": "https://www.machinavitalis.com/",
+        "examplesURL": "https://github.com/machinavitalis/jaxonomy/tree/main/fmi-compatibility",
+        "description": "Python library for simulating hybrid dynamical systems from block diagrams and acausal components, built on JAX with automatic differentiation through the simulation",
+        "features": [],
+        "platforms": [
+            "Linux",
+            "macOS"
+        ],
+        "interfaces": [
+            "library"
+        ],
+        "fmiVersions": [
+            "2.0",
+            "3.0"
+        ],
+        "fmuExport": [
+            "CS"
+        ],
+        "fmuImport": [
+            "CS",
+            "ME"
+        ],
+        "layeredStandards": []
+    },
 	{
         "name": "FERAL",
         "license": "commercial",
@@ -1225,56 +1255,6 @@
         "fmuImport": [
             "CS",
             "ME"
-        ]
-    },
-    {
-        "name": "Collimator",
-        "license": "commercial",
-        "url": "https://app.collimator.ai/",
-        "logo": "collimator.svg",
-        "vendor": "Collimator",
-        "vendorURL": "https://www.collimator.ai/",
-        "description": "Cloud-based platform to model, simulate, and optimize complex dynamical systems with a combination of physics and machine learning. Built on an open core powered by Python and JAX.",
-        "features": [],
-        "platforms": [
-            "macOS",
-            "Linux",
-            "Windows"
-        ],
-        "interfaces": [
-            "GUI"
-        ],
-        "fmiVersions": [
-            "2.0"
-        ],
-        "fmuExport": [],
-        "fmuImport": [
-            "CS"
-        ]
-    },
-    {
-        "name": "pycollimator",
-        "license": "osi",
-        "url": "https://py.collimator.ai/",
-        "logo": "collimator.svg",
-        "vendor": "Collimator",
-        "vendorURL": "https://www.collimator.ai/",
-        "description": "Python package powering Collimator's Python- and cloud-native simulation platform. It contains both a local high-performance simulation engine built with JAX, and a client API to run simulations in the cloud.",
-        "features": [],
-        "platforms": [
-            "macOS",
-            "Linux",
-            "Windows"
-        ],
-        "interfaces": [
-            "library"
-        ],
-        "fmiVersions": [
-            "2.0"
-        ],
-        "fmuExport": [],
-        "fmuImport": [
-            "CS"
         ]
     },
     {
