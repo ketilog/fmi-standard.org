@@ -7104,9 +7104,10 @@
     "name": "SOFIRpy",
     "license": "osi",
     "url": "https://github.com/fluid-systems/SOFIRpy",
-    "logo": "",
+    "logo": "fst_logo.png",
     "vendor": "Chair of Fluid Systems, TU Darmstadt",
     "vendorURL": "https://www.fst.tu-darmstadt.de/fachgebiet/index.de.jsp",
+	"examplesURL": "https://fluid-systems.github.io/SOFIRpy/fmu_export.html",
     "description": "SOFIRpy is a Python package that lets you co-simulate FMUs with custom models written in Python. The package provides functionalities to export Dymola and OpenModelica models as a FMU, co-simulate FMUs with custom written models in Python, and store data and metadata of the simulations inside an HDF5 file.",
     "features": [],
     "platforms": [
